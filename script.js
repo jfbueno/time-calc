@@ -10,6 +10,10 @@ function init() {
     inputTempoConsulta = document.querySelector('#tempo-consulta');
     inputQuantidadeConsultas = document.querySelector('#qtd-consultas');
     form = document.querySelector('form');
+
+    document.querySelector('.alert button.close').addEventListener('click', function() {
+        this.parentNode.classList.add('hidden')
+    });
 }
 
 function btCalcularClick() {
@@ -32,7 +36,9 @@ function btCalcularClick() {
         return response.json();
     })
     .then((payload) => {
-        const elementResultado = document.querySelector('#resultado');        
-        elementResultado.innerHTML = `As consultas terminarão às ${payload.horaFinal}`;
+        const elementResultado = document.querySelector('#alert-resultado');      
+        elementResultado.classList.remove('hidden');
+
+        elementResultado.querySelector('span').innerHTML = `As consultas terminarão às ${payload.horaFinal}`;
     });
 }
