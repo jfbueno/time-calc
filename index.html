@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="config-container" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <hr>
+            </div>
+            
+            <div class="col-md-4 ml-auto mr-auto">
+                <form action="">
+                    <div class="form-group">
+                        <label for="title">Hora de início</label>
+                        <input type="time" id="hora-inicio" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Tempo de consulta</label>
+                        <input type="number" class="form-control" id="tempo-consulta" placeholder="Em minutos" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Quantidade de consultas</label>
+                        <input type="number" class="form-control" id="qtd-consultas" required/>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block" style="cursor: pointer" id="btn-calcular" type="button">Calcular</button><br>                    
+                </form>
+                <div class="text-center" id="resultado"></div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
