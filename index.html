@@ -2,7 +2,8 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
@@ -14,6 +15,9 @@
     <div id="config-container" class="container mt-5">
         <div class="row">
             <div class="col-md-12 text-center">
+                <h2>
+                    <img class="clock-icon" src="imgs/clock.svg" alt="">
+                </h2>
                 <hr>
             </div>
             
@@ -25,19 +29,21 @@
                     </div>
                     <div class="form-group">
                         <label for="body">Tempo de consulta</label>
-                        <input type="number" class="form-control" id="tempo-consulta" placeholder="Em minutos" required/>
+                        <input type="number" class="form-control" id="tempo-consulta" placeholder="em minutos" required/>
                     </div>
                     <div class="form-group">
                         <label for="body">Quantidade de consultas</label>
                         <input type="number" class="form-control" id="qtd-consultas" required/>
                     </div>
                     
-                    <button class="btn btn-primary btn-block" style="cursor: pointer" id="btn-calcular" type="button">Calcular</button><br>                    
+                    <button class="btn btn-primary btn-block btn-calc" style="cursor: pointer" id="btn-calcular" type="button">
+                        Calcular <i class="fas fa-calculator"></i>
+                    </button><br>
                 </form>
-                <div class="alert alert-secondary text-center hidden" role="alert" id="alert-resultado">
+                <div class="alert alert-primary text-center hidden" role="alert" id="alert-resultado">
                     <span></span>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">                        
+                        <span class="far fa-times-circle pull-right"></i>
                     </button>
                 </div>
             </div>

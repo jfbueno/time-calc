@@ -1,3 +1,12 @@
 .hidden {
     display: none;
 }
+
+.clock-icon {
+    width: 100px;
+    height: auto;
+}
+
+.btn-calc>.fas {
+    padding: 0 5;
+}
