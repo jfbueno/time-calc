@@ -1,3 +1,11 @@
+input {
+    -webkit-appearance: none;
+}
+
+input[type="time"] {
+	min-height: 2.5rem;
+}
+
 .hidden {
     display: none;
 }
