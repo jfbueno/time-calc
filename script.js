@@ -18,6 +18,7 @@ function init() {
 
 function btCalcularClick() {
     if(!form.checkValidity()) {
+        form.classList.add('was-validated');
         return;
     }
 
