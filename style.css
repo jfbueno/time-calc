@@ -18,3 +18,11 @@ input[type="time"] {
 .btn-calc>.fas {
     padding: 0 5;
 }
+
+footer {
+    color: rgb(88, 88, 88);
+}
+
+footer>.fa-heart {
+    color: rgb(151, 4, 4);
+}
